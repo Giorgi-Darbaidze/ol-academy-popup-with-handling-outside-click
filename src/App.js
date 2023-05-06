@@ -1,4 +1,4 @@
-import Popup from './components/app.jsx'
+import Popup from './components/Popup.jsx'
 import './components/app.css'
 
 function App() {

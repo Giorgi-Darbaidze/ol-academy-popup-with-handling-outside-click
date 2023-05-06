@@ -1,26 +1,43 @@
+body {
+   background-color: rgb(62, 168, 166);
+}
+
 .btn {
+   background-color: rgba(65, 124, 176, 0.66);
    margin: 20rem 60rem;
+   border: none;
+   color: white;
+   border-radius: 1rem;
+   padding: 1rem 2rem;
+   font-size: large;
+   transition: 0.3s all;
+   cursor: pointer;
+}
+
+.btn:hover {
+   background-color: rgb(65, 124, 176);
 }
 
 .popup_container {
-   width: 100vw;
-   height: 100vh;
+   background-color: rgb(0, 0, 0, 0.5);
    position: fixed;
+   height: 100vh;
+   width: 100vw;
    top: 0;
    left: 0;
-   background-color: rgb(0, 0, 0, 0.5);
    display: flex;
    align-items: center;
    justify-content: center;
 }
  
 .popup {
+   background-color: #c73d3d;
+   flex-direction: column;
+   border-radius: 12px;
+   color: white;
+   display: flex;
    width: 25%;
    height: 25%;
-   background-color: #fff;
-   border-radius: 12px;
-   display: flex;
-   flex-direction: column;
 }
  
 .popup_title {
@@ -33,16 +50,16 @@
 }
  
 .divider_line {
+   background-color: rgb(0, 0, 0, 0.3);
    width: 100%;
    height: 1px;
-   background-color: rgb(0, 0, 0, 0.3);
 }
 
 .close {
-   border: none;
-   background-color: transparent;
-   font-size: 20px;
    color: 'rgba(0,0,0,0.5)';
+   background-color: transparent;
+   border: none;
+   font-size: 20px;
    transition: all 0.1s;
    margin-left: 33rem;
 }
@@ -55,4 +72,6 @@
 .msg {
    display: flex;
    justify-content: center;
+   font-size: large;
+   font-family: Tahoma;
 }

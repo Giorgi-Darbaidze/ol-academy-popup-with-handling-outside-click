@@ -1,11 +1,9 @@
-import React from 'react'
+import {useState, useRef} from 'react'
 
 const Popup = () => {
-   const [isOpen, setIsOpen] = React.useState(false)
-   const containerRef = React.useRef(null)
-
+   const [isOpen, setIsOpen] = useState(false)
+   const containerRef = useRef(null)
    const toggle = () => setIsOpen(!isOpen)
-
    const closeOnBackdrop = event => {
       if (event.target === containerRef.current) {
          toggle()
